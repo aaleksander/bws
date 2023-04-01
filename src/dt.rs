@@ -2,16 +2,19 @@
 
 use chrono::{DateTime, Local, Datelike, TimeZone};
 
+#[allow(dead_code)]
 pub fn now() -> DateTime<Local>
 {
     return chrono::offset::Local::now();
 }
 
+#[allow(dead_code)]
 pub fn get_day_of_week() -> u32
 {
     return __get_day_of_week(chrono::offset::Local::now());
 }
 
+#[allow(dead_code)]
 pub fn ymd(year: i32, month:u32, day: u32) -> DateTime<Local>
     {
         return chrono::Local.with_ymd_and_hms(year, month, day, 0, 0, 0).unwrap();
