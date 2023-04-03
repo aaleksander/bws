@@ -2,7 +2,6 @@
 #[macro_use]
 extern crate ini;
 
-
 use bws::Bws;
 use history::History;
 
@@ -20,7 +19,7 @@ fn main() {
     let connection_string = map["db"]["postgres"].clone().unwrap();
 
     //let connection_string = String::from("postgresql://postgres:123123@localhost:5432/postgres");
-//    let i = Ini::load_from_file("conf.ini").unwrap();
+    //    let i = Ini::load_from_file("conf.ini").unwrap();
 
     println!("create strategy");
     let bws: Bws = Bws::new(100_000.0, &connection_string);
