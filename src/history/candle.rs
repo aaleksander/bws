@@ -10,11 +10,9 @@ pub struct Candle {
     volume: u64,
 }
 
-impl Candle
-{
-    pub fn new(date_time:DateTime<Local>,  o: f64, h: f64, l: f64, c: f64, v: u64) -> Candle
-    {
-        return Candle{
+impl Candle {
+    pub fn new(date_time: DateTime<Local>, o: f64, h: f64, l: f64, c: f64, v: u64) -> Candle {
+        return Candle {
             dt: date_time,
             open: o,
             high: h,
@@ -23,5 +21,4 @@ impl Candle
             volume: v,
         };
     }
-
 }
